@@ -41,12 +41,13 @@
           endif
         -%}
         {%- for block in section.blocks -%}
-          <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="collection-list__item grid__item{% if show_mobile_slider %} slider__slide{% endif %}{% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}" {{ block.shopify_attributes }}>
+          <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="collection-list__item {% if show_mobile_slider %} slider__slide{% endif %}{% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}" {{ block.shopify_attributes }}>
             <a href="{{ block.settings.collection.url }}">
             <img
-                    src="{{ block.settings.collection.featured_image | image_url: width: 150 }}"
+                    src="{{ block.settings.collection.featured_image | image_url: width: 200 }}"
                     alt=""
-                    width="150"
+                    width="200"
+                    height="100"
                     loading="lazy"
                     class="motion-reduce"
             >
