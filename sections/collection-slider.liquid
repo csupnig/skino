@@ -25,7 +25,7 @@
     assign show_mobile_slider = true
   endif
 -%}
-<!--
+
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="collection-list-wrapper page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %} section-{{ section.id }}-padding">
   
@@ -75,43 +75,6 @@
     {%- endif -%}
   </div>
 </div>
--->
-<slideshow-component class="slider-mobile-gutter" role="region" aria-roledescription="{{ 'sections.slideshow.carousel' | t }}" aria-label="{{ section.settings.accessibility_info | escape }}">
-
-  <div class="slideshow banner banner--100 grid grid--1-col slider slider--everywhere"
-       id="Slider-{{ section.id }}"
-       aria-live="polite"
-       aria-atomic="true"
-       data-autoplay="true"
-       data-speed="2500"
-  >
-    {%- for block in section.blocks -%}
-      <style>
-        #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after {
-          opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
-        }
-      </style>
-      <div class="slideshow__slide grid__item grid--1-col slider__slide"
-           id="Slide-{{ section.id }}-{{ forloop.index }}"
-              {{ block.shopify_attributes }}
-           role="group"
-           aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
-           aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
-           tabindex="-1"
-      >
-        <div class="slideshow__media banner__media media">
-            <img src="{{ block.settings.collection.featured_image | image_url: width: 150 }}"
-                    loading="lazy"
-                    alt="{{ block.settings.image.alt | escape }}"
-                    width="150"
-                    height="100"
-            >
-        </div>
-
-      </div>
-    {%- endfor -%}
-  </div>
-</slideshow-component>
 
 
 {% schema %}
