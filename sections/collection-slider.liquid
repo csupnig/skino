@@ -26,11 +26,24 @@
   endif
 -%}
 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.custom-slick-slider-{{ section.id }}').slick({
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+  });
+</script>
+
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="collection-list-wrapper page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %} section-{{ section.id }}-padding">
   
     <slider-component class="slider-mobile-gutter">
-      <ul class="collection-list contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} collection-list--{{ section.blocks.size }}-items"
+      <ul class="custom-slick-slider-{{ section.id }}"
         id="Slider-{{ section.id }}"
         role="list"
       >
