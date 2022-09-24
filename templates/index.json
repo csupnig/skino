@@ -68,6 +68,42 @@
           "settings": {
             "collection": "laneige"
           }
+        },
+        "576aac35-66f1-43a9-8cc3-47d8172f4b17": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "may-island"
+          }
+        },
+        "7c24ffa1-faef-4aad-952e-7d70bdaf215c": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "missha"
+          }
+        },
+        "752bde6e-6b49-4a38-af41-89a178375fd3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "purito"
+          }
+        },
+        "210af222-8d59-4db4-ad58-952a0ea3a194": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rire"
+          }
+        },
+        "4618b196-e3f8-49dd-988b-355931f6fb97": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "somebymi"
+          }
+        },
+        "280ca45d-2d30-4485-9239-9f277716ced9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "too-cool-for-school"
+          }
         }
       },
       "block_order": [
@@ -76,7 +112,13 @@
         "1663987990683a940d-2",
         "f4023c7a-09e9-458d-b96b-30a024625418",
         "ecf0297a-6ade-4f5c-b5d9-0baa70b88d90",
-        "2e4ee349-af0e-4b01-944a-f53d5bf57aa0"
+        "2e4ee349-af0e-4b01-944a-f53d5bf57aa0",
+        "576aac35-66f1-43a9-8cc3-47d8172f4b17",
+        "7c24ffa1-faef-4aad-952e-7d70bdaf215c",
+        "752bde6e-6b49-4a38-af41-89a178375fd3",
+        "210af222-8d59-4db4-ad58-952a0ea3a194",
+        "4618b196-e3f8-49dd-988b-355931f6fb97",
+        "280ca45d-2d30-4485-9239-9f277716ced9"
       ],
       "settings": {
         "title": "Collections",
