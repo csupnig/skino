@@ -250,7 +250,7 @@
             {{ block.settings.custom_liquid }}
           {%- when 'meta_liquid' -%}
               <div class="product__meta" {{ block.shopify_attributes }}>
-                  <h2 class="h4 meta__title">
+                  <h2 class="h3 meta__title">
                       {{ block.settings.heading | default: block.settings.page.title }}
                   </h2>
                   <div class="meta__content rte" id="ProductMeta-{{ block.id }}-{{ section.id }}">
