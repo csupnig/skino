@@ -266,16 +266,6 @@
                 </div>
               </details>
             </div>
-          {%- when 'meta_content' -%}
-            <div class="product_meta_content" {{ block.shopify_attributes }}>
-              <h2 class="h4 pdocut-meta-content-heading">
-                {{ block.settings.heading | default: block.settings.page.title }}
-              </h2>
-              <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-                {{ block.settings.content }}
-                {{ block.settings.page.content }}
-              </div>
-            </div>
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
@@ -779,16 +769,16 @@
       ]
     },
     {
-      "type": "meta_liquid",
-      "name": "Meta Liquid",
-      "settings": [
-          {
-              "type": "richtext",
-              "id": "content",
-              "label": "Content",
-              "info": "Content"
-          }
-      ]
+        "type": "meta_liquid",
+        "name": "Meta Liquid",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "content",
+                "label": "Content",
+                "info": "Content"
+            }
+        ]
     },
     {
       "type": "collapsible_tab",
@@ -998,45 +988,34 @@
       ]
     },
     {
-      "type": "meta_content",
-      "name": "Meta Content",
+      "type": "popup",
+      "name": "t:sections.main-product.blocks.popup.name",
       "settings": [
-          {
+        {
           "type": "text",
-          "id": "heading",
-          "default": "Meta Content",
-          "info": "Meta Content",
-          "label": "Meta Content"
-          },
-          {
-            "type": "popup",
-            "name": "t:sections.main-product.blocks.popup.name",
-            "settings": [
-              {
-                "type": "text",
-                "id": "text",
-                "default": "Pop-up link text",
-                "label": "t:sections.main-product.blocks.popup.settings.link_label.label"
-              },
-              {
-                "id": "page",
-                "type": "page",
-                "label": "t:sections.main-product.blocks.popup.settings.page.label"
-              }
-            ]
-          },
-          {
-            "type": "rating",
-            "name": "t:sections.main-product.blocks.rating.name",
-            "limit": 1,
-            "settings": [
-              {
-                "type": "paragraph",
-                "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
-              }
-            ]
-          }
-    ],
+          "id": "text",
+          "default": "Pop-up link text",
+          "label": "t:sections.main-product.blocks.popup.settings.link_label.label"
+        },
+        {
+          "id": "page",
+          "type": "page",
+          "label": "t:sections.main-product.blocks.popup.settings.page.label"
+        }
+      ]
+    },
+    {
+      "type": "rating",
+      "name": "t:sections.main-product.blocks.rating.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
+        }
+      ]
+    }
+  ],
   "settings": [
     {
       "type": "checkbox",
