@@ -1,5 +1,61 @@
 {
   "sections": {
+    "1664005729c2f8b934": {
+      "type": "multicolumn",
+      "blocks": {
+        "16640057295ced5fc2-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/certificate-150x150.png",
+            "title": "AUTHENTIC PRODUCTS",
+            "text": "<p>SKINO is Korean Beauty Online Platform providing genuine products only. <\/p><p><\/p><p>All products are 100% originals.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16640057295ced5fc2-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/donation-150x150.png",
+            "title": "YOU MATTER TO US",
+            "text": "<p>We are a small business, meaning each and every client receives a personal approach.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16640057295ced5fc2-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/delivery-truck-150x150.png",
+            "title": "FAST SHIPPING",
+            "text": "<p>We know you already want to hold it in your hands. That's why we ship our orders as fast as possible from Vienna, Austria.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16640057295ced5fc2-0",
+        "16640057295ced5fc2-1",
+        "16640057295ced5fc2-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -134,62 +190,6 @@
         "columns_desktop": 3,
         "color_scheme": "background-1",
         "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1664005729c2f8b934": {
-      "type": "multicolumn",
-      "blocks": {
-        "16640057295ced5fc2-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/certificate-150x150.png",
-            "title": "AUTHENTIC PRODUCTS",
-            "text": "<p>SKINO is Korean Beauty Online Platform providing genuine products only. <\/p><p><\/p><p>All products are 100% originals.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "16640057295ced5fc2-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/donation-150x150.png",
-            "title": "YOU MATTER TO US",
-            "text": "<p>We are a small business, meaning each and every client receives a personal approach.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "16640057295ced5fc2-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/delivery-truck-150x150.png",
-            "title": "FAST SHIPPING",
-            "text": "<p>We know you already want to hold it in your hands. That's why we ship our orders as fast as possible from Vienna, Austria.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "16640057295ced5fc2-0",
-        "16640057295ced5fc2-1",
-        "16640057295ced5fc2-2"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -359,9 +359,9 @@
     }
   },
   "order": [
+    "1664005729c2f8b934",
     "rich_text",
     "16639879903926f003",
-    "1664005729c2f8b934",
     "featured_collection",
     "collage",
     "video",
