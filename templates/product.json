@@ -68,6 +68,13 @@
             "content": "<p>{{ product.metafields.custom.skintype | metafield_tag }}<\/p>"
           }
         },
+        "9c4de74d-75e7-46bf-b1c4-12d661abe06d": {
+          "type": "meta_liquid",
+          "settings": {
+            "heading": "Properties",
+            "content": "<p>{{ product.metafields.custom.properties_ | metafield_tag }}<\/p>"
+          }
+        },
         "collapsible-row-3": {
           "type": "collapsible_tab",
           "settings": {
@@ -114,6 +121,7 @@
         "description",
         "40c0c9a7-59b4-47cb-8767-a55029f412ca",
         "a7d3854a-0648-402e-9599-8e11dac9254c",
+        "9c4de74d-75e7-46bf-b1c4-12d661abe06d",
         "collapsible-row-3",
         "collapsible-row-0",
         "e59992b9-d7e4-4d2a-b5ad-7f4f197254f7",
