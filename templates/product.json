@@ -12,7 +12,13 @@
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
+        },
+        "opinew-stars-plugin-product": {
+          "type": "shopify:\/\/apps\/opinew-product-reviews-app\/blocks\/product-stars\/e1d8e0dc-17ff-4e4a-8a8a-1e73c8ef8676",
+          "settings": {
+          }
         },
         "caption": {
           "type": "text",
@@ -23,7 +29,8 @@
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -33,7 +40,8 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {}
+          "settings": {
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -43,7 +51,22 @@
         },
         "description": {
           "type": "description",
-          "settings": {}
+          "settings": {
+          }
+        },
+        "40c0c9a7-59b4-47cb-8767-a55029f412ca": {
+          "type": "meta_liquid",
+          "settings": {
+            "heading": "Product type",
+            "content": "<p>{{ product.metafields.custom.product_type | metafield_tag }}<\/p>"
+          }
+        },
+        "a7d3854a-0648-402e-9599-8e11dac9254c": {
+          "type": "meta_liquid",
+          "settings": {
+            "heading": "Skin type",
+            "content": "<p>{{ product.metafields.custom.skintype | metafield_tag }}<\/p>"
+          }
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
@@ -77,10 +100,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "opinew-stars-plugin-product": {
-          "type": "shopify:\/\/apps\/opinew-product-reviews-app\/blocks\/product-stars\/e1d8e0dc-17ff-4e4a-8a8a-1e73c8ef8676",
-          "settings": {}
         }
       },
       "block_order": [
@@ -93,6 +112,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "40c0c9a7-59b4-47cb-8767-a55029f412ca",
+        "a7d3854a-0648-402e-9599-8e11dac9254c",
         "collapsible-row-3",
         "collapsible-row-0",
         "e59992b9-d7e4-4d2a-b5ad-7f4f197254f7",
@@ -210,7 +231,8 @@
       "blocks": {
         "opinew-reviews-widget": {
           "type": "shopify:\/\/apps\/opinew-product-reviews-app\/blocks\/product-widget\/e1d8e0dc-17ff-4e4a-8a8a-1e73c8ef8676",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
