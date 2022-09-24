@@ -248,6 +248,14 @@
             {%- endif -%}
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
+          {%- when 'meta_liquid' -%}
+              <h2 class="h4 meta__title">
+                  {{ block.settings.heading | default: block.settings.page.title }}
+              </h2>
+              <div class="meta__content rte" id="ProductMeta-{{ block.id }}-{{ section.id }}">
+                  {{ block.settings.content }}
+                  {{ block.settings.page.content }}
+              </div>
           {%- when 'collapsible_tab' -%}
             <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
               <details id="Details-{{ block.id }}-{{ section.id }}">
