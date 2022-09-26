@@ -80,6 +80,12 @@
           "settings": {
             "collection": "skinfood"
           }
+        },
+        "7933adfe-4f95-47c6-b392-1b5fc5512922": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "banila-co"
+          }
         }
       },
       "block_order": [
@@ -95,7 +101,8 @@
         "210af222-8d59-4db4-ad58-952a0ea3a194",
         "4618b196-e3f8-49dd-988b-355931f6fb97",
         "280ca45d-2d30-4485-9239-9f277716ced9",
-        "b81e7d65-0a18-493e-891d-2e08afdc8ecb"
+        "b81e7d65-0a18-493e-891d-2e08afdc8ecb",
+        "7933adfe-4f95-47c6-b392-1b5fc5512922"
       ],
       "settings": {
         "title": "Collections",
