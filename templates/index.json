@@ -86,6 +86,12 @@
           "settings": {
             "collection": "banila-co"
           }
+        },
+        "ce2c470f-df4a-4f10-bb86-03db0ffea135": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "benton"
+          }
         }
       },
       "block_order": [
@@ -102,7 +108,8 @@
         "4618b196-e3f8-49dd-988b-355931f6fb97",
         "280ca45d-2d30-4485-9239-9f277716ced9",
         "b81e7d65-0a18-493e-891d-2e08afdc8ecb",
-        "7933adfe-4f95-47c6-b392-1b5fc5512922"
+        "7933adfe-4f95-47c6-b392-1b5fc5512922",
+        "ce2c470f-df4a-4f10-bb86-03db0ffea135"
       ],
       "settings": {
         "title": "Collections",
