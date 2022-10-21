@@ -29,10 +29,16 @@
   }
 {%- endstyle -%}
 
+
+
 <div id="Banner-{{ section.id }}" class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
       {%-liquid
+        assign loading = 'eager'
+        if section.settings.load_images_lazy
+          assign loading = 'lazy'
+        endif
         assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
         if section.settings.image_2 != blank
           assign image_class = "banner__media-image-half"
@@ -46,7 +52,7 @@
         endif
       -%}
       {{ section.settings.image | image_url: width: 1500 | image_tag:
-        loading: 'lazy',
+        loading: loading,
         width: section.settings.image.width,
         height: image_height,
         class: image_class,
@@ -63,6 +69,10 @@
   {%- if section.settings.image_2 != blank -%}
     <div class="banner__media media{% if section.settings.image != blank %} banner__media-half{% endif %}">
       {%-liquid
+        assign loading2 = 'eager'
+        if section.settings.load_images_lazy
+          assign loading2 = 'lazy'
+        endif
         assign image_height_2 = section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio
         if section.settings.image != blank
           assign image_class_2 = "banner__media-image-half"
@@ -76,7 +86,7 @@
         endif
       -%}
       {{ section.settings.image_2 | image_url: width: 1500 | image_tag:
-        loading: 'lazy',
+        loading: loading2,
         width: section.settings.image_2.width,
         height: image_height_2,
         class: image_class_2,
@@ -167,6 +177,13 @@
       "default": false,
       "label": "t:sections.image-banner.settings.adapt_height_first_image.label",
       "info": "t:sections.image-banner.settings.adapt_height_first_image.info"
+    },
+    {
+    "type": "checkbox",
+    "id": "load_images_lazy",
+    "default": false,
+    "label": "Load images lazy",
+    "info": "Make sure to leave on false if above the fold"
     },
     {
       "type": "select",
