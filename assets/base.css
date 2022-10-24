@@ -1959,6 +1959,9 @@ input[type='checkbox'] {
   .quantity {
     width: auto;
   }
+  .cart-item__quantity .quantity {
+    width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
+  }
 }
 
 .quantity:after {
