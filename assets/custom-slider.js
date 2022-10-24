@@ -1,12 +1,12 @@
 $(document).ready(function(){
     var $slider = $('#only-slider');
-    /*$slider.slick({
+    $slider.slick({
         arrows: false,
-        slidesToShow: Math.floor($slider.width() / 200),
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-    });*/
-    console.log('JQ', $slider.slick);
+    });
+    console.log('JQ', $slider.slick, $slider);
     $('.slider-mobile-gutter').show();
 });
