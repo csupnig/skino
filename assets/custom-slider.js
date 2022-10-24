@@ -1,12 +1,15 @@
 $(document).ready(function(){
     var $slider = $('#only-slider');
-    $slider.slick({
-        arrows: false,
-        slidesToShow: Math.floor($('.collection-list-wrapper').width() / 200),
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    });
-    console.log('Elements', Math.floor($('.collection-list-wrapper').width() / 200));
-    $('.slider-mobile-gutter').show();
+    var elements = Math.floor($('.collection-list-wrapper').width() / 200);
+    if (elements > 2) {
+        $slider.slick({
+            arrows: false,
+            slidesToShow: elements,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+        console.log('Elements', elements);
+        $('.slider-mobile-gutter').show();
+    }
 });
