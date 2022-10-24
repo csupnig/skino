@@ -13,18 +13,17 @@
         "1664006218ed0aecc4-1": {
           "type": "text",
           "settings": {
-            "text": "Korean Beauty Products & European service!",
+            "text": "Korean Beauty Products & Local Service!",
             "text_style": "body"
           }
         },
         "1664006218ed0aecc4-2": {
           "type": "buttons",
-          "disabled": true,
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
+            "button_label_1": "SHOP",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
