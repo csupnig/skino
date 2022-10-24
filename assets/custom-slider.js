@@ -7,6 +7,6 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 2000,
     });
-    console.log('JQ', $slider.slick, $slider, $slider.width());
+    console.log('JQ', $slider.slick, $slider, Math.floor($('.collection-list-wrapper').width() / 200));
     $('.slider-mobile-gutter').show();
 });
