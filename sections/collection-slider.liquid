@@ -39,7 +39,7 @@
   <div class="collection-list-wrapper page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %} section-{{ section.id }}-padding">
 
     <slider-component class="slider-mobile-gutter" style="display:none;">
-      <ul class="custom-slick-slider-{{ section.id }}"
+      <ul class="custom-slick-slider custom-slick-slider-{{ section.id }}"
         id="Slider-{{ section.id }}"
         role="list"
       >

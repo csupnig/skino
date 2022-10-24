@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var $slider = $('.custom-slick-slider-{{ section.id }}');
+    var $slider = $('.custom-slick-slider');
     $slider.slick({
         arrows: false,
         slidesToShow: Math.floor($slider.width() / 200),
