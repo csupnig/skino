@@ -253,6 +253,8 @@
 .card--standard > .card__content .card__information {
   padding-left: 0;
   padding-right: 0;
+  display: grid;
+  grid-template-rows: 1fr 32px;
 }
 
 .card--card.card--media .card__inner .card__information,
