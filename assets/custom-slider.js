@@ -7,6 +7,6 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 2000,
     });*/
-    console.log('JQ', $slider);
+    console.log('JQ', $slider.slick);
     $('.slider-mobile-gutter').show();
 });
