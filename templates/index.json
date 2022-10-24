@@ -212,8 +212,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/certificate-150x150.png",
-            "title": "AUTHENTIC PRODUCTS",
-            "text": "<p>SKINO is Korean Beauty Online Platform providing genuine products only. <\/p><p><\/p><p>All products are 100% originals.<\/p>",
+            "title": "QUALITY PRODUCTS",
+            "text": "<p>We cooperate with the best known Korean beauty brands to bring you the products you know and trust.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -233,7 +233,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/delivery-truck-150x150.png",
             "title": "FAST SHIPPING",
-            "text": "<p>We know you already want to hold it in your hands. That's why we ship our orders as fast as possible from Vienna, Austria.<\/p>",
+            "text": "<p>We know you already want to hold it in your hands. That's why we ship our orders as fast as possible, directly from Vienna, Austria.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -394,7 +394,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>Even after extensive research that goes into providing only the best ingredients, they are affordable and reasonably priced!<\/p>",
+            "text": "<p>Even after the extensive research that goes into the products and providing only the best ingredients, they are affordable and reasonably priced!<\/p>",
             "link_label": "",
             "link": ""
           }
