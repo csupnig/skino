@@ -423,5 +423,10 @@
       "copy_code_success": "Code erfolgreich kopiert",
       "print_gift_card": "Drucken"
     }
+  },
+  "shopify": {
+    "links": {
+      "powered_by_shopify": "​"
+    }
   }
 }
