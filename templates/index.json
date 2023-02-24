@@ -135,6 +135,18 @@
           "settings": {
             "collection": "british-m"
           }
+        },
+        "cebdae10-896f-4f5f-aba7-8867b197c3e0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mizon"
+          }
+        },
+        "d756282a-b4d4-409e-8b25-4db0eeaab7e8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "beauty-of-joseon"
+          }
         }
       },
       "block_order": [
@@ -151,7 +163,9 @@
         "b81e7d65-0a18-493e-891d-2e08afdc8ecb",
         "7933adfe-4f95-47c6-b392-1b5fc5512922",
         "ce2c470f-df4a-4f10-bb86-03db0ffea135",
-        "0119a30d-068c-49bd-ad7f-ea31d3fb825b"
+        "0119a30d-068c-49bd-ad7f-ea31d3fb825b",
+        "cebdae10-896f-4f5f-aba7-8867b197c3e0",
+        "d756282a-b4d4-409e-8b25-4db0eeaab7e8"
       ],
       "settings": {
         "title": "Collections",
