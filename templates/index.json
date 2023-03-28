@@ -147,6 +147,12 @@
           "settings": {
             "collection": "beauty-of-joseon"
           }
+        },
+        "c9d7b209-79ac-421b-a111-43ede9fb5021": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kundal"
+          }
         }
       },
       "block_order": [
@@ -165,7 +171,8 @@
         "ce2c470f-df4a-4f10-bb86-03db0ffea135",
         "0119a30d-068c-49bd-ad7f-ea31d3fb825b",
         "cebdae10-896f-4f5f-aba7-8867b197c3e0",
-        "d756282a-b4d4-409e-8b25-4db0eeaab7e8"
+        "d756282a-b4d4-409e-8b25-4db0eeaab7e8",
+        "c9d7b209-79ac-421b-a111-43ede9fb5021"
       ],
       "settings": {
         "title": "Collections",
