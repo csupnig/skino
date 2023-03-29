@@ -107,14 +107,23 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to Skino - K-beauty products available in the heart of Austria!",
+              "text": "Welcome to Skino - K-beauty products available in the heart of Austria! Free shipping over € 50,- order value",
+              "color_scheme": "background-1",
+              "link": "shopify:\/\/collections\/all"
+            }
+          },
+          "e258aa34-7e73-439c-8fb9-a7e20427a0d2": {
+            "type": "announcement",
+            "settings": {
+              "text": "",
               "color_scheme": "background-1",
               "link": "shopify:\/\/collections\/all"
             }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "e258aa34-7e73-439c-8fb9-a7e20427a0d2"
         ],
         "settings": {
         }
